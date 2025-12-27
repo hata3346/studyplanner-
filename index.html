@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1>📚 Study Planner</h1>
+
+  <div class="add-task">
+    <input id="subject" placeholder="Matière">
+    <input id="goal" placeholder="Objectif / tâche">
+    <input id="time" type="number" placeholder="Temps (heures)">
+    <select id="priority">
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+    <button onclick="addTask()">➕ Ajouter</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>✔</th>
+        <th>Matière</th>
+        <th>Objectif</th>
+        <th>Temps</th>
+        <th>Priorité</th>
+        <th>Progression</th>
+        <th>❌</th>
+      </tr>
+    </thead>
+    <tbody id="taskTable"></tbody>
+  </table>
+
+  <h2>📊 Temps par matière</h2>
+  <canvas id="chart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

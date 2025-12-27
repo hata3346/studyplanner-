@@ -1,0 +1,72 @@
+body {
+  background: #f7eef4;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #d63384;
+}
+
+.add-task {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task input, select, button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #d63384;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b82a6a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #f4c1dc;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: #eee;
+  border-radius: 8px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 8px;
+  color: white;
+  font-size: 12px;
+}
+
+.Low { background: #6fcf97; }
+.Medium { background: #f2c94c; }
+.High { background: #eb5757; }
